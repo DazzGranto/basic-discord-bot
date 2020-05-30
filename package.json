@@ -1,0 +1,35 @@
+{
+  "name": "my-bot",
+  "version": "1.0.0",
+  "description": "no description boi.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DazzGranto/basic-discord-bot.git"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js"
+  ],
+  "author": "DazzGranto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DazzGranto/basic-discord-bot/issues"
+  },
+  "homepage": "https://github.com/DazzGranto/basic-discord-bot#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
