@@ -108,4 +108,6 @@ Star ⭐!
 
 ! . 02 . !#9502 (Discord)
 
+If you have any questions, you can contact me on Discord or Github.
+
 made with 💙!
