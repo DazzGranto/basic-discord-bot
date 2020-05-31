@@ -39,7 +39,7 @@ REGION='en'
 * `aliases`: Command's aliases.
     * Optional
     * default: `[]`
-    * type: Array<string>
+    * type: string[]
 
 * `cooldown`: Command's cooldown.
     * Optional
