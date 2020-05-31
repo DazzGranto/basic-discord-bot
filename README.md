@@ -1,4 +1,4 @@
-# Discord Bot (Not Ready)
+# Discord Bot
 > Simple class based discord bot.
 
 ## First Install Packages
