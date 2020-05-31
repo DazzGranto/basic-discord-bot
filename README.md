@@ -1,4 +1,4 @@
-# Discord Bot (Not Ready)
+# Discord Class Bot
 > Simple class based discord bot.
 
 ## First Install Packages
@@ -101,4 +101,4 @@ Star ⭐!
 
 ! . 02 . !#9502 (Discord)
 
-made with 💙
+made with 💙!
