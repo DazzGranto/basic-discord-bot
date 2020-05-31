@@ -12,24 +12,89 @@ yarn
 
 ## Usage
 
-Fill out the values.
+Fill out the values (`Rename the '.env_config' file to '.env'.`).
 
 ```
+# Your bot token
 TOKEN="UltrA seCret ßot toqEn"
+
+# Bot's prefix
 PREFIX="prefix!"
+
+# Your user ID
 AUTHOR_ID=12345678899
+
+# For the logger module. DEFAULT : 'en'
+REGION='en' 
+```
+
+### Command
+
+> Command Data
+
+* `name`: Command's name.
+    * Required
+    * type: string
+
+* `aliases`: Command's aliases.
+    * Optional
+    * default: `[]`
+    * type: Array<string>
+
+
+* `guildOnly`: If true, it works only in guilds.
+    * Optional
+    * default: `true`
+    * type: boolean
+
+* `ownerOnly`: If true, only the bot owner cas use this command.
+    * Optional
+    * default: `false`
+
+* `description`: Command's description.
+    * Optional
+    * default: `No description provided.`
+    * type: string
+
+* `category`: It takes the name of the folder it is in.
+    * Auto
+    * default: `Other`
+    * type: string
+
+* `usage`: Command's usage.
+    * Optional
+    * default: `undefined`
+    * type: string | undefined
+
+#### Example
+
+```js
+const Command = require('../../Base/Struct/Command');
+
+module.exports = class extends Command {
+	constructor(client) {
+		super(client, {
+            name: 'ping',
+            aliases: ['latency']
+        });
+	}
+    
+	exec(message) {
+		message.channel.send(`Latency: ${this.client.ws.ping}ms`);
+	}
+};
 ```
 
 ## Thanks!
 
 [Fork!](https://github.com/DazzGranto/basic-discord-bot/fork)
+
 Star ⭐!
 
 ### Me
 
-> DazzGranto
+[DazzGranto (Github)](https://github.com/DazzGranto)
 
-[Me (Discord)](https://discord.com/channels/@me/441977034843881473)
-[Me (Github)](https://github.com/DazzGranto)
+! . 02 . !#9502 (Discord)
 
 made with 💙
