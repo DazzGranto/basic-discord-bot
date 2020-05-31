@@ -40,7 +40,7 @@ class MyClient extends Client {
 
 		if(cmd.usage && !args.length) {
 			let reply = 'You haven\'t specified an argument.';
-			if(cmd.usage) reply += `\n${this.prefix}${cmd.name} ${cmd.usage}`;
+			if(cmd.usage) reply += `\n\`\`\`${this.prefix}${cmd.name} ${cmd.usage}\`\`\``;
 			return message.channel.send(reply);
 		}
 
