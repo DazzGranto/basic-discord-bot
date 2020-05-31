@@ -46,10 +46,29 @@ class MyClient extends Client {
 
 		if(cmd.ownerOnly && message.author.id !== AUTHOR_ID) return message.channel.send('Owner only.');
 
+		if(!this.cooldowns.has(cmd.name)) this.cooldowns.set(cmd.name, new Collection());
+		
+		// From https://discordjs.guide/command-handling/adding-features.html#cooldowns
+		let now = Date.now();
+		let timestamps = this.cooldowns.get(cmd.name);
+		let cooldownAmount = (cmd.cooldown) * 1000;
+		if (timestamps.has(message.author.id)) {
+			const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+		
+			if (now < expirationTime) {
+				const timeLeft = (expirationTime - now) / 1000;
+				return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${cmd.name}\` command.`);
+			}
+		}
+
+		timestamps.set(message.author.id, now);
+		setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+		
 		try {
 			cmd.exec(message, args);
 		} catch(e) {
 			this.logger.log(`CommandHandlerError ${cmd.name}: ${e}`, 'ERROR');
+			message.reply('an error occurred.');
 		}
 	}
     

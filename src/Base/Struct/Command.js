@@ -4,6 +4,7 @@ class Command {
 
 		this.name = data.name;
 		this.aliases = data.aliases || [];
+		this.cooldown = data.cooldown || 3;
 		
 		this.guildOnly = data.guildOnly || true;
 		this.ownerOnly = data.ownerOnly || false;

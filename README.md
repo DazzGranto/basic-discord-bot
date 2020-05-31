@@ -41,6 +41,10 @@ REGION='en'
     * default: `[]`
     * type: Array<string>
 
+* `cooldown`: Command's cooldown.
+    * Optional
+    * default: `3`
+    * type: number
 
 * `guildOnly`: If true, it works only in guilds.
     * Optional
@@ -73,7 +77,7 @@ const Command = require('../../Base/Struct/Command');
 
 module.exports = class extends Command {
 	constructor(client) {
-		super(client, {
+	    super(client, {
             name: 'ping',
             aliases: ['latency']
         });
