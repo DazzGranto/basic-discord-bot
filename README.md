@@ -34,41 +34,42 @@ REGION='en'
 
 * `name`: Command's name.
     * Required
-    * type: string
+    * type: `string`
 
 * `aliases`: Command's aliases.
     * Optional
     * default: `[]`
-    * type: string[]
+    * type: `Array<string>`
 
 * `cooldown`: Command's cooldown.
     * Optional
     * default: `3`
-    * type: number
+    * type: `number`
 
 * `guildOnly`: If true, it works only in guilds.
     * Optional
     * default: `true`
-    * type: boolean
+    * type: `boolean`
 
 * `ownerOnly`: If true, only the bot owner cas use this command.
     * Optional
     * default: `false`
+    * type: `boolean`
 
 * `description`: Command's description.
     * Optional
     * default: `No description provided.`
-    * type: string
+    * type: `string`
 
 * `category`: It takes the name of the folder it is in.
     * Auto
     * default: `Other`
-    * type: string
+    * type: `string`
 
 * `usage`: Command's usage.
     * Optional
     * default: `undefined`
-    * type: string | undefined
+    * type: `string` | `undefined`
 
 #### Example
 
