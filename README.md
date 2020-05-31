@@ -57,7 +57,7 @@ REGION="en"
     * default: `true`
     * type: `boolean`
 
-* `ownerOnly`: If true, only the bot owner cas use this command.
+* `ownerOnly`: If true, only the bot owner can use this command.
     * Optional
     * default: `false`
     * type: `boolean`
