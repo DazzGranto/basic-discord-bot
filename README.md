@@ -10,6 +10,12 @@ or
 yarn
 ```
 
+### Launching
+
+```
+npm start
+```
+
 ## Usage
 
 Fill out the values (`Rename the '.env_config' file to '.env'.`).
