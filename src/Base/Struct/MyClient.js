@@ -36,6 +36,8 @@ class MyClient extends Client {
 		let cmd = this.commands.get(command.toLowerCase()) ||
 		this.commands.find(data => data.aliases && data.aliases.includes(command.toLowerCase()));
 		
+		if(!cmd) return;
+		
 		if(cmd.guildOnly && !message.guild) return message.channel.send('I can\'t run this command in DM.');
 
 		if(cmd.usage && !args.length) {
