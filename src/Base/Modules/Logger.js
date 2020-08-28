@@ -1,8 +1,6 @@
 const moment = require('moment');
 const chalk = require('chalk');
 
-moment.locale(process.env.REGION || 'en');
-
 class Logger {
 	log(content, type = 'LOG') {
 		let now = moment().format('LLLL');

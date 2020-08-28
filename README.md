@@ -29,9 +29,6 @@ PREFIX="prefix!"
 
 # Your user ID
 AUTHOR_ID=12345678899
-
-# For the logger module. DEFAULT : "en"
-REGION="en"
 ```
 
 ### Command
