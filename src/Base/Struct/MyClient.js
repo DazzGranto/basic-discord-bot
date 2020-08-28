@@ -37,7 +37,11 @@ class MyClient extends Client {
 		this.commands.find(data => data.aliases && data.aliases.includes(command.toLowerCase()));
 		
 		if(!cmd) return;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 063dd94cf91848f70aa895ac017123f0bf80bd25
 		if(cmd.guildOnly && !message.guild) return message.channel.send('I can\'t run this command in DM.');
 
 		if(cmd.usage && !args.length) {
