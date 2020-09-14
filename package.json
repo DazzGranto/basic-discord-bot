@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/DazzGranto/basic-discord-bot#readme",
   "dependencies": {
-    "chalk": "^4.0.0",
-    "discord.js": "^12.2.0",
+    "chalk": "^4.1.0",
+    "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
     "glob": "^7.1.6",
-    "moment": "^2.26.0"
+    "moment": "^2.28.0"
   }
 }
