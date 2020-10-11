@@ -103,7 +103,7 @@ Star ⭐!
 
 [DazzGranto (Github)](https://github.com/DazzGranto)
 
-! . 02 . !#9502 (Discord)
+[! . 02 . !#9502 (Discord)](http://discord.com/users/441977034843881473)
 
 If you have any questions, you can contact me on Discord or Github.
 
